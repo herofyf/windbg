@@ -1,0 +1,17 @@
+!sym noisy 
+
+.effmach x86 | amd64 | ia64 | ebc    // Use x86, amd64, ia64, or ebc processor mode 
+
+
+? Expression    Evaluate expression (use default evaluator) 
+?? Expression  Evaluate c++ expression
+
+
+x [Options] Module!Symbol 
+x *!	list all modules
+x ntdll!*	list all symbols of ntdll
+x /t /v MyDll!*	list all symbol in MyDll with data type, symbol type and size
+x kernel32!*LoadLib*	list all symbols in kernel32 that contain the word LoadLib
+
+
+.format
